@@ -8,7 +8,7 @@ const authRoutes = require('./routes/auth')
 
 // const dbURI = `mongodb+srv://${process.env.MDB_USER}:${process.env.MDB_PASS}@cluster0.uvbmi.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
 
-app.use(express.static('public'))
+app.use(express.static('build'))
 app.use(express.urlencoded({extended: true}))
 app.use(express.json())
 app.use((req, res, next) => {
